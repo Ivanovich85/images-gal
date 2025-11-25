@@ -1,12 +1,18 @@
 import React from "react";
-import {Navbar} from 'react-bootstrap';
+import { Navbar, Container } from "react-bootstrap";
 
-const Header = ({title}) =>{
-    return(
-        <Navbar bg="light" variant="light">
-            <Navbar.Brand href="/">{title}</Navbar.Brand>
-        </Navbar>
-    )
-}
+const navbarStyle = {
+  backgroundColor: "lightblue",
+};
 
-export default Header;//allows this file to be imported by other files
+const Header = ({ title }) => {
+  return (
+    <Navbar style={navbarStyle} variant="light">
+      <Container>
+        <Navbar.Brand href="/">{title}</Navbar.Brand>
+      </Container>
+    </Navbar>
+  );
+};
+
+export default Header; //allows this file to be imported by other files
