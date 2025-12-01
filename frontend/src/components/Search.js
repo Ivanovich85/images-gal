@@ -12,7 +12,7 @@ const Search = ({word, setWord, handleSubmit}) => {
                 <Form.Control 
                     type="text"
                     value={word}
-                    onChange={(e) => setWord(e.target.value)}
+                    onChange={(e) => setWord(e.target.value)}//this is what changes the state in App.js
                     placeholder="Search for new image..." 
                 />
               </Col>
