@@ -19,6 +19,7 @@ const App= () => {
       .catch((error) => {
         console.log(error);
       });
+    setWord('');//clears the input field after submission
   }
 
     console.log(word);
